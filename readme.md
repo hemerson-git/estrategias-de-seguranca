@@ -6,3 +6,8 @@
 
 2. Root detection - Jail break.
     1. https://github.com/GantMan/jail-monkey
+
+3. SLL Pinning.  Fix a list of trusted certificates
+   1. [Trustkit](https://github.com/datatheorem/TrustKit)
+   2. [TrustKit - Android](https://github.com/datatheorem/TrustKit-Android.)
+

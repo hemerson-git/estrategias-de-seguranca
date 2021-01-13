@@ -14,6 +14,7 @@ import {
   View,
   Text,
   StatusBar,
+  BackHandler,
 } from 'react-native';
 
 import {
@@ -24,7 +25,17 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 
+import JailMonkey from 'jail-monkey';
+
+console.log(`Is Rooted: ${JailMonkey.isJailBroken}`);
+console.log(`Can Mock Location: ${JailMonkey.canMockLocation}`);
+console.log(`Any of the above: ${JailMonkey.trustFall}`);
+console.log(`Running on external storage: ${JailMonkey.isOnExternalStorage}`);
+console.log(`has Some Malicious app Running?: ${JailMonkey.hookDetected}`);
+
 const App: () => React$Node = () => {
+  JailMonkey.trustFall && BackHandler.exitApp();
+
   return (
     <>
       <StatusBar barStyle="dark-content" />
