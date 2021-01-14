@@ -1,0 +1,13 @@
+{
+  "name": "proxy",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/axios": "^0.14.0",
+    "@vercel/node": "^1.9.0"
+  },
+  "dependencies": {
+    "axios": "^0.21.1"
+  }
+}
