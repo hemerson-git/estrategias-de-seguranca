@@ -20,7 +20,7 @@ const jsoMetroPlugin = obfuscator(
 
   {
     runInDev: false,
-    logObfuscatedFiles: true,,
+    logObfuscatedFiles: true,
   },
 );
 
@@ -34,5 +34,5 @@ module.exports = {
     }),
   },
 
-  ...jsoMetroPlugin
+  ...jsoMetroPlugin,
 };
